@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "com.burning.iplay"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    // material design
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    // retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    // rx
+    compile 'io.reactivex:rxjava:1.2.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    // okHttp
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    // gson
+    compile 'com.google.code.gson:gson:2.7'
+    // glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    // butter knife
+    // apply plugin: 'com.neenbedankt.android-apt'
+    // classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    // BaseAdaptor
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    //PhotoView
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    //circle image
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    // 顶部的tab栏切换
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1'
+    // 视频播放框架
+    compile 'fm.jiecao:jiecaovideoplayer:5.5'
+    // 另一个视频播放框架
+    // compile 'com.github.CarGuo:GSYVideoPlayer:v1.6.0'
+    // LeakCanary
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+
+    // 数据库框架Litepal
+    compile 'org.litepal.android:core:1.5.0'
+    // 字体框架
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+}

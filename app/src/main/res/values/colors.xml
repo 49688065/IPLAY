@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bot_text_color_normal">#BB1F35</color>
+    <color name="bot_text_color_selected">#414141</color>
+
+    <color name="colorTextTitle">#000</color>
+    <color name="colorBgGrey">#ECECEC</color>
+    <color name="fragBg">#EEEEEE</color>
+
+    <color name="colorGrey">#888</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#D0240C</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorLightGrey">#eeeeeeee</color>
+    <color name="colorOrange">#F7C67A</color>
+    <color name="colorGrayTransparent">#88444444</color>
+    <color name="colorDividerLine">#F5F5F5</color>
+    <color name="colorBlue">#4d91e2</color>
+    <color name="colorTextGrey">#C3C3C3</color>
+    <color name="colorSubCommentBg">#F8F7F2</color>
+
+
+    <!-- 下拉刷新时刷新状态不断改变的颜色的值-->
+    <color name="swipe_color_1">#FF4081</color>
+    <color name="swipe_color_2">#a9995a</color>
+    <color name="swipe_color_3">#2a2c8f</color>
+    <color name="swipe_color_4">#1a8482</color>
+    <!--社区-爱玩社区的背景颜色-->
+    <color name="iplay_background_color">#F5F5F5</color>
+
+
+</resources>

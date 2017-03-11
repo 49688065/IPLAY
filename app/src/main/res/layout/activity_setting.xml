@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+
+        <ImageButton
+            android:id="@+id/detail_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人设置"
+            android:textColor="@color/colorTextTitle"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBgGrey"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/setting_font_family"
+            style="@style/style_setting_item">
+
+            <TextView
+                style="@style/setting_text_item"
+                android:text="更换字体"/>
+
+            <TextView
+                android:id="@+id/font_change_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="雅黑 --> 行书"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_setting_item"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                style="@style/setting_text_item"
+                android:text="夜间模式"/>
+
+            <ImageView
+                android:id="@+id/setting_day_night"
+                style="@style/style_setting_item_icon"
+                android:src="@drawable/switch_pgrecommend_turnoff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_setting_item">
+
+            <TextView
+                style="@style/setting_text_item"
+                android:text="爱玩推送"/>
+
+            <ImageView
+                android:id="@+id/setting_jpush"
+                style="@style/style_setting_item_icon"
+                android:src="@drawable/switch_pgrecommend_turnoff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_about_me"
+            style="@style/style_setting_item">
+
+            <TextView
+                style="@style/setting_text_item"
+                android:text="关于"/>
+
+            <ImageButton
+                style="@style/style_setting_item_icon"
+                android:background="@drawable/btn_pgmy1_arroow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_clear_cache"
+            style="@style/style_setting_item"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                style="@style/setting_text_item"
+                android:gravity="right"
+                android:text="清理缓存"/>
+
+            <TextView
+                android:id="@+id/cache_size_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="99.88M"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/setting_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="爱玩有新版本了，点我查看!"
+                android:textColor="@color/colorRed"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

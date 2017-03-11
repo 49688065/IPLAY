@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    style="@style/item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:layout_margin="3dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/type2_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayTransparent">
+
+                <TextView
+                    android:id="@+id/type2_title_tv"
+                    style="@style/item_tv_title"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="65dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="123123123123123123"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/type2_game_name_tv"
+                    style="@style/item_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/type2_title_tv"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text=" ★ ★ "
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    style="@style/item_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/type2_game_name_tv"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/type2_game_name_tv"
+                    android:gravity="center"
+                    android:text="@string/text_type2"
+                    android:textColor="@color/colorWhite"/>
+
+
+                <TextView
+                    style="@style/item_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/type2_game_name_tv"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/type2_game_name_tv"
+                    android:gravity="center"
+                    android:text="@string/text_type2"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/recommend_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/recommend_penName"
+                style="@style/item_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/recommend_icon"
+                android:text="123123"/>
+
+            <TextView
+                android:id="@+id/author_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/recommend_penName"
+                android:background="@drawable/recommend_pname_bg"
+                android:padding="3dp"
+                android:text="专栏作家"
+                android:textColor="@color/colorOrange"
+                android:textSize="10sp"/>
+
+
+            <TextView
+                android:id="@+id/recommend_read_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:drawableLeft="@drawable/img_pgrecommend2_limit"
+                android:drawablePadding="5dp"
+                android:text="677"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/recommend_replay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/recommend_read_seconds"
+                android:drawableLeft="@drawable/img_chat_pgnews1"
+                android:drawablePadding="5dp"
+                android:text="677"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

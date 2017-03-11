@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="2dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/zhuanlan_icon_iv"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/zhualan_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏文化"
+            android:textColor="@color/colorTextTitle"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/zhualan_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="趣味发掘考据，解读游戏艺术"
+            android:textColor="@color/colorTextTitle"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/zhualan_follow_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/img_pgrecommend2_fav1"
+            android:drawablePadding="5px"
+            android:text="499"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

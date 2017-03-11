@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#dc15a0</color>
+
+    <color name="bot_text_color_normal">#BB1F35</color>
+    <color name="bot_text_color_selected">#919191</color>
+
+    <color name="colorTextTitle">#919191</color>
+    <color name="colorBgGrey">#1F1F1F</color>
+    <color name="colorTextGrey">#646464</color>
+    <color name="colorWhite">#2d2d2d</color>
+
+    <color name="colorGrey">#888</color>
+    <color name="colorRed">#D0240C</color>
+    <color name="colorLightGrey">#eeeeeeee</color>
+    <color name="colorOrange">#F7C67A</color>
+    <color name="colorGrayTransparent">#88444444</color>
+    <color name="colorDividerLine">#F5F5F5</color>
+    <color name="colorBlue">#4d91e2</color>
+    <color name="colorSubCommentBg">#F8F7F2</color>
+
+
+</resources>

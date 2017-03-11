@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Iplay</string>
+
+    <string name="frag_news">资 讯</string>
+    <string name="frag_jingxuan">精 选</string>
+    <string name="frag_forum">社 区</string>
+    <string name="frag_my">我</string>
+
+    <string name="text_type2">----</string>
+    <string name="footer_no_more">没有更多了</string>
+    <string name="replay_hint">跟贴是一种态度。。。</string>
+    <string name="search_hint">搜索资讯</string>
+    <string name="search_btn">搜索</string>
+    <string name="hot_search">近期热搜</string>
+    <string name="search_warn">！请输入搜索内容</string>
+    <string name="comment_new_title">最新跟帖</string>
+    <string name="comment_hot_title">热门跟帖</string>
+
+
+    <!--用于社区 热门推荐的-->
+    <string name="search_forumhot_hint">搜索帖子</string>
+    <string name="default_user_name">火星网友</string>
+    <string name="me_login_hint">请登录</string>
+
+    <string-array name="news_arr">
+        <item>头条</item>
+        <item>关注</item>
+        <item>网游</item>
+        <item>手游</item>
+        <item>主机</item>
+        <item>电竞</item>
+    </string-array>
+
+    <string-array name="jingxuan_arr">
+        <item>最新推荐</item>
+        <item>精选专栏</item>
+    </string-array>
+
+    <string-array name="forum_arr">
+        <item>热门推荐</item>
+        <item>爱玩社区</item>
+        <item>凯恩之角</item>
+    </string-array>
+
+    <!-- 基本的权限 -->
+    <string-array name="basic_permissions">
+        <item>android.permission.READ_EXTERNAL_STORAGE</item>
+        <item>android.permission.WRITE_EXTERNAL_STORAGE</item>
+        <item>android.permission.READ_PHONE_STATE</item>
+        <item>android.permission.READ_PHONE_STATE</item>
+    </string-array>
+
+</resources>

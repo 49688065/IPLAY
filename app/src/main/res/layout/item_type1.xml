@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="89dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@id/news_item_content"
+                style="@style/item_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:text="1231231231231231231223123133123123"/>
+
+            <TextView
+                android:id="@+id/type1_comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/item_comment"
+                android:drawablePadding="5dp"
+                android:text="123"
+                android:textSize="12sp"/>
+
+
+            <TextView
+                android:id="@+id/type1_editor_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/type1_comment_tv"
+                android:text="二愣子"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/type1_mid_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/type1_editor_tv"
+                android:text="发表于"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/type1_source_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/type1_mid_tv"
+                android:text="GIF广场"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/type1_iv"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider_line"/>
+
+</LinearLayout>

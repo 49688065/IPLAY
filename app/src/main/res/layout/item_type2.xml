@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="184dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <TextView
+            android:id="@id/news_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/type2_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayTransparent">
+
+            <TextView
+                android:id="@+id/type2_title_tv"
+                style="@style/item_tv_title"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="65dp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="123123123123123123"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/type2_game_name_tv"
+                style="@style/item_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type2_title_tv"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text=" ★ ★ "
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                style="@style/item_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/type2_game_name_tv"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/type2_game_name_tv"
+                android:gravity="center"
+                android:text="@string/text_type2"
+                android:textColor="@color/colorWhite"/>
+
+
+            <TextView
+                style="@style/item_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/type2_game_name_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/type2_game_name_tv"
+                android:gravity="center"
+                android:text="@string/text_type2"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/divider_line"/>
+</LinearLayout>

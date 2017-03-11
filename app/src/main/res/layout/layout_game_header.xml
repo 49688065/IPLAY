@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <ImageView
+        android:id="@+id/game_header_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayTransparent">
+
+        <ImageView
+            android:id="@+id/game_header_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/game_header_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/game_header_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/game_header_iv"
+            android:text="暴雪资讯"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/game_header_des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/game_header_title_tv"
+            android:layout_below="@id/game_header_title_tv"
+            android:layout_marginTop="10dp"
+            android:text="暴雪粉丝大本营"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/game_header_fouce_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/game_header_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/game_header_iv"
+            android:text="123132 人关注"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+
+        <ImageButton
+            android:id="@+id/game_header_focuse_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/game_header_iv"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/border_red"/>
+
+    </RelativeLayout>
+</FrameLayout>
